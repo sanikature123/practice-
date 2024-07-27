@@ -1,17 +1,15 @@
-using System;
-class Trail
+class Ex
 {
-	public void op()
+	public void Fun()
 	{
 		float sum;
 		int i;
 		sum = 0.0F;
-		for(i = 1; i<= 10; i++)
+		for (i=1;i<=10;i++)
 		{
-			sum = sum + 1/(float)i;
-			Console.WriteLine("i="+i);
-			Console.WriteLine("sum ="+sum);
-		
+			sum = sum +1/(float)i;
+			System.Console.Write("i="+i);
+			System.Console.WriteLine("sum =" +sum);
 		}
 	}
 }
@@ -19,8 +17,7 @@ class Casting
 {
 	public static void Main()
 	{
-		Trail obj = new Trail();
-		obj.op();	
+		Ex obj= new Ex();
+		obj.Fun();
 	}
 }
-		
