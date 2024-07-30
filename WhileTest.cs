@@ -1,21 +1,28 @@
-Class WhileTest
+class Ch7
 {
-	public static void Main ( )
+	public void op()
 	{
-		int n = 1;
-		while (n<=10)
+		int n=1;
+		while(n<=10)
 		{
-			if (n%2==0)
+			if(n%2==0)
 			{
 				n++;
-			
 			}
 			else
 			{
-			Console. Write(" "+n);
-			n++;
+				System.Console.WriteLine(""+n);
+				n++;
 			}
-                 }
-          }
+		}
+	}
+}
+class WhileTest
+{
+	public static void Main()
+	{
+		Ch7 obj=new Ch7();
+		obj.op();
+	}
 
 }

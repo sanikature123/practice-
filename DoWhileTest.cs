@@ -1,29 +1,32 @@
-Class DoWhileTest
+class Ch7
 {
-   public static void Main()
-   {
-      int row, column, y; 
-      row = 1;
-      System. Console. WriteLine("Multiplication Table \n");
-
-      do
-      {
-	column = 1;
-
-        do
+	public void op()
 	{
-	   y = row * column;
-	   System. Console. Write(" " + y);
-	   column = column + 1;
-	}
+		int row, column,y;
+		row=1;
+		System.Console.WriteLine("multiplication table \n");
+		do
+		{
+			column=1;
+			do
+			{
+				y=row*column;
+				System.Console.Write(""+y);
+				column=column+1;
+			}
+			while(column<=3);
+			System.Console.WriteLine("\n");
+			row=row+1;
+		}
+		while(row<=3);
+	} 
 
-	while (column <= 3);
-
-	System. Console. WriteLine("\n");
-	row = row + 1;
-      }
-      while (row <= 3);
-   }
 }
-
-
+class DoWhileTest
+{
+	public static void Main()
+	{
+	Ch7 obj = new Ch7();
+	obj.op();
+	}
+}
