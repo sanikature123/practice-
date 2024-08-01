@@ -1,7 +1,7 @@
-using system;
+using System;
 class passby
 {
-	static void swap(ref int x,ref int y)
+	static void Swap(ref int x,ref int y)
 	{	
 		int temp=x;
 		x=y;
